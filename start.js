@@ -1,14 +1,14 @@
-// var config = {
-//     apiKey: "AIzaSyA0PzkgtUm7TUvIweYfkoEFD_1YnF_daHw",
-//     authDomain: "tracker-b765b.firebaseapp.com",
-//     databaseURL: "https://tracker-b765b.firebaseio.com/",
-//     storageBucket: "bucket.appspot.com",
-// };
-// firebase.initializeApp(config);
+var config = {
+    apiKey: "AIzaSyA0PzkgtUm7TUvIweYfkoEFD_1YnF_daHw",
+    authDomain: "tracker-b765b.firebaseapp.com",
+    databaseURL: "https://tracker-b765b.firebaseio.com/",
+    storageBucket: "bucket.appspot.com",
+};
+firebase.initializeApp(config);
 // console.log(firebase);
 
 // // Get a reference to the database service
-// var database = firebase.database();
+var database = firebase.database();
 
 // function getLocation() {
 //     if (navigator.geolocation) {
