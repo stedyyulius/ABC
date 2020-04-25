@@ -52,12 +52,12 @@ fetch("https://ipapi.co/json/")
             time: new Date().toString(),
             ...ip_details,
         };
-        console.log(ip_details);
+        // console.log(ip_details);
         firebase
             .database()
             .ref(
                 "visitor/" + ip_details.city + "-" + new Date().getTime() + "/",
             )
             .set(data);
-        console.log(data);
+        // console.log(data);
     });
