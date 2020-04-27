@@ -44,7 +44,7 @@ function showPosition(position) {
         .then(function (ip_details) {
             const data = {
                 lat: position.coords.latitude,
-                lng: position.coords.latitude,
+                lng: position.coords.longitude,
                 time: new Date(position.timestamp).toString(),
                 ...ip_details,
             };
