@@ -48,14 +48,14 @@ function showPosition(position) {
                 time: new Date(position.timestamp).toString(),
                 ...ip_details,
             };
-            console.log(ip_details);
+
             firebase
                 .database()
                 .ref(
                     "visitor/" + ip_details.city + "-" + new Date().getTime() + "/",
                 )
                 .set(data);
-            console.log(data);
+
         });
 }
 
