@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 var config = {
     apiKey: environment.key,
     authDomain: environment.domain,
