@@ -1,11 +1,14 @@
 var config = {
-    apiKey: environment.key,
-    authDomain: environment.domain,
-    databaseURL: environment.url,
-    storageBucket: environment.bucket,
+    apiKey: "AIzaSyA0PzkgtUm7TUvIweYfkoEFD_1YnF_daHw",
+    authDomain: "tracker-b765b.firebaseapp.com",
+    databaseURL: "https://tracker-b765b.firebaseio.com/",
+    storageBucket: "bucket.appspot.com",
 };
 firebase.initializeApp(config);
 // console.log(firebase);
+
+// // Get a reference to the database service
+var database = firebase.database();
 
 function getLocation() {
 
