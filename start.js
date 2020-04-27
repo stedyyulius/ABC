@@ -1,14 +1,13 @@
+require('dotenv').config();
+
 var config = {
-    apiKey: process.env.key,
-    authDomain: process.env.domain,
-    databaseURL: process.env.url,
-    storageBucket: process.env.bucket,
+    apiKey: environment.key,
+    authDomain: environment.domain,
+    databaseURL: environment.url,
+    storageBucket: environment.bucket,
 };
 firebase.initializeApp(config);
 // console.log(firebase);
-
-// // Get a reference to the database service
-var database = firebase.database();
 
 function getLocation() {
 
